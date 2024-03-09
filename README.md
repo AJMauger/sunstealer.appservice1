@@ -1,6 +1,6 @@
 # Sunstealer.appservice1 .net 8
 
-Sandpit .net 8 API server with Identity and Swagger.
+Sandpit .net 8 API service with Identity and Swagger IIS deploy.
 
 An Identity Server 6 is required with:
 
