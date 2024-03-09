@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\ajm\Documents\AppService1\publish</_PublishTargetUrl>
+    <History>True|2024-03-08T21:01:12.3666874Z;True|2024-03-08T13:10:52.9438535-07:00;True|2024-03-08T12:48:03.0475937-07:00;True|2024-03-08T12:35:43.4952415-07:00;True|2024-03-08T12:35:07.1444467-07:00;True|2024-03-08T10:40:23.5954493-07:00;True|2024-03-08T10:34:28.8404020-07:00;True|2024-03-08T10:19:01.6367018-07:00;True|2024-03-08T10:15:53.2782892-07:00;True|2024-03-08T10:11:44.8837913-07:00;False|2024-03-08T10:06:06.5329516-07:00;True|2024-03-08T09:03:59.2896094-07:00;True|2024-03-08T08:43:10.9927574-07:00;True|2024-03-08T08:39:37.9476801-07:00;True|2024-03-07T19:29:16.9980884-07:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>
