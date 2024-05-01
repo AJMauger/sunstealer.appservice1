@@ -1,0 +1,16 @@
+﻿@model string;
+
+@{
+    ViewData["Title"] = "Home";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Sandpit API Server with Identity and Swagger.</p>
+<div style="display: flex; flex-direction: row; font-size: 12px;">
+    <div style="width: 10%;">access_token:</div>
+    <div style="width: 60%; overflow: auto;">@ViewBag.AccessToken</div>
+</div>
+<div style="display: flex; flex-direction: row; font-size: 12px;">
+    <div style="width: 10%;">JWT:</div>
+    <div style="width: 60%; overflow: auto;"><pre>@ViewBag.Token</pre></div>
+</div>

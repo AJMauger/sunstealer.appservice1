@@ -1,0 +1,41 @@
+@model IEnumerable<AppService1.Models.Generic>
+
+@{
+    ViewData["Title"] = "Index View";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Integer)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.String)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Integer)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.String)
+            </td>
+            <td>
+                @Html.ActionLink("sunstealer.read", "sunstealer.read", new { id=item.Id }) |
+                @Html.ActionLink("Update", "Update", new { id=item.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

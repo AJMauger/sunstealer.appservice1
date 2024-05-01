@@ -1,0 +1,3 @@
+﻿sc.exe create "AppService1" binpath= "C:\Users\ajm\Documents\ServiceApp1\app\bin\Debug\net8.0\Sunstealer.AppService1.exe"
+
+sc.exe delete "AppService1"
