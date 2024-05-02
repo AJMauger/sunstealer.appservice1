@@ -78,3 +78,27 @@ GO
 
 SELECT * FROM database1..View1
 GO
+
+USE [database1]
+GO
+
+/****** Object:  Table [dbo].[Datetime]    Script Date: 5/1/2024 6:23:33 PM ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[Datetime]') AND type in (N'U'))
+DROP TABLE [dbo].[Datetime]
+GO
+
+/****** Object:  Table [dbo].[Datetime]    Script Date: 5/1/2024 6:23:33 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Datetime](
+	[UID] [int] IDENTITY(1,1) NOT NULL,
+	[Start] [datetime] NULL,
+	[Stop] [date] NULL,
+	[Offset] [int] NULL,
+	[Computed_IntervalStart]  AS (case when dateadd(year,[Offset],getdate())<[Start] then [Start] else dateadd(year,[Offset],getdate()) end)
+) ON [PRIMARY]
+GO
