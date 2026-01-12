@@ -1,0 +1,61 @@
+
+  "partitionKeyDefinitionVersion": 2,
+  "conflictResolutionPolicy": {
+    "mode": 0,
+    "resolutionPath": "/_ts",
+    "resolutionProcedure": ""
+  },
+  "id": "container1",
+  "uniqueKeyPolicy": {
+    "uniqueKeys": []
+  },
+  "eTag": "\"00000000-0000-0000-7ca0-10d2700501dc\"",
+  "lastModified": "2026-01-03T10:59:43Z",
+  "clientEncryptionPolicy": null,
+  "indexingPolicy": {
+    "automatic": true,
+    "indexingMode": 0,
+    "includedPaths": [
+      {
+        "path": "/*"
+      }
+    ],
+    "excludedPaths": [
+      {
+        "path": "/\"_etag\"/?"
+      }
+    ],
+    "compositeIndexes": [
+      [
+        {
+          "path": "/x",
+          "order": 0
+        },
+        {
+          "path": "/y",
+          "order": 0
+        }
+      ]
+    ],
+    "spatialIndexes": [],
+    "vectorIndexes": [],
+    "fullTextIndexes": []
+  },
+  "vectorEmbeddingPolicy": {},
+  "computedProperties": [],
+  "fullTextPolicy": {
+    "defaultLanguage": "en-US",
+    "fullTextPaths": []
+  },
+  "geospatialConfig": {
+    "geospatialType": 0
+  },
+  "partitionKeyPath": "/id",
+  "partitionKeyPaths": [
+    "/id"
+  ],
+  "timeToLivePropertyPath": null,
+  "defaultTimeToLive": null,
+  "analyticalStoreTimeToLiveInSeconds": null,
+  "selfLink": "dbs/JccqAA==/colls/JccqAKZ5IJs=/"
+}
